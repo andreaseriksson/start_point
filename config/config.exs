@@ -15,7 +15,10 @@ config :start_point, StartPointWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "TekvXbni9R/u6BHQtUbz8ZCWoWYNgkTGqEK7vXtH9n/KfvMLTK66Ko6EV2eq8bL1",
   render_errors: [view: StartPointWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: StartPoint.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: StartPoint.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [
+    signing_salt: "blsqStXZXrijO0PM0Up+ju3Qo6NMnYIE"
+  ]
 
 # Configures Elixir's Logger
 config :logger, :console,

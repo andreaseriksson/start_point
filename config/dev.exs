@@ -52,7 +52,8 @@ config :start_point, StartPointWeb.Endpoint,
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/start_point_web/views/.*(ex)$},
-      ~r{lib/start_point_web/templates/.*(eex)$}
+      ~r{lib/start_point_web/templates/.*(eex)$},
+      ~r{lib/poor_man_spa_web/live/.*(ex)$}
     ]
   ]
 
